@@ -14,10 +14,10 @@ const FeedbackSection = () => (
                   style={{ width: "80px", height: "80px", objectFit: "cover" }}
                 />
                 <p>“Un service rapide et efficace. Très satisfait !”</p>
-                <h5 className="card-title">Pierre Dupont</h5> {/* اسم المستخدم هنا */}
+                <h5 className="card-title">Pierre Dupont</h5> 
               </div>
             </div>
-           </div>
+          </div>
           <div className="col-md-4">
             <div className="card shadow mb-4">
               <div className="card-body text-center">
@@ -28,7 +28,7 @@ const FeedbackSection = () => (
                   style={{ width: "80px", height: "80px", objectFit: "cover" }}
                 />
                 <p>“Un site web très facile à utiliser, je le recommande vivement !”</p>
-                <h5 className="card-title">Marie Lefevre</h5> {/* اسم المستخدم هنا */}
+                <h5 className="card-title">Marie Lefevre</h5> 
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ const FeedbackSection = () => (
                 style={{ width: "80px", height: "80px", objectFit: "cover" }}
                 />
                 <p>“J'ai trouvé tout ce que je cherchais en quelques clics. Excellent !”</p>
-                <h5 className="card-title">Jacques Martin</h5> {/* اسم المستخدم هنا */}
+                <h5 className="card-title">Jacques Martin</h5>
             </div>
             </div>
         </div>

@@ -72,7 +72,7 @@
 }
 
 .navbar a:hover {
-    background-color: #ddd; /* Change color on hover */
+    background-color: #f0eeee; /* Change color on hover */
     color: black;
 }
 .mehdi{
@@ -139,3 +139,8 @@
 .search-bar .btn-primary {
     transform: translateY(-7px);
 }*/
+#about img {
+    width: 600px;      
+    height: 410px;     
+    object-fit: cover; 
+}

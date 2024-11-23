@@ -1,34 +1,30 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
-import SpecialtyCards from "./components/SpecialtyCards";
-import FeedbackSection from "./components/FeedbackSection";
-import MapPreview from "./components/MapPreview";
-import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
-import "./styles/main.css"; 
-import heroImage from './assets/heroImage.jpg';  
+import HomePage from "./Page/HomePage";
+import Login from "./Page/Login";
+import "./styles/main.css";
 
-function App() {
-  return (
-    <div className="mehdi">
-      <Header />
-      <div
-        className="hero-image"
-        style={{
-          backgroundImage: `url(${heroImage})`, 
-        }}
-      >
-      
-        <SearchBar />
-      </div>
-      <SpecialtyCards />
-      <FeedbackSection />
-      <MapPreview />
-      <AboutUs />
-      <Footer />
-    </div>
-  );
-}
+const App = () => {
+    
+    const location = useLocation();
+    
+    
+    const isLoginPage = location.pathname === "/login";
+
+    return (
+        <div>
+            
+            {!isLoginPage && <Header />}
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/login" element={<Login />} />
+            </Routes>
+            
+            {!isLoginPage && <Footer />}
+        </div>
+    );
+};
 
 export default App;
