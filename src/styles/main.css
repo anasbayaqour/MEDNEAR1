@@ -1,9 +1,9 @@
-.hero-image {
+/*.hero-image {
     position: relative;
     width: 100%;
     height: 700px;
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
 }
 .hero-image {
     position: relative;
@@ -63,7 +63,7 @@
     margin-top: 60px; 
 }
 
-  /* Styling for navbar items (links) */
+
 .navbar a {
     color: rgb(0, 0, 0);
     padding: 14px 20px;
@@ -72,7 +72,7 @@
 }
 
 .navbar a:hover {
-    background-color: #f0eeee; /* Change color on hover */
+    background-color: #f0eeee;
     color: black;
 }
 .mehdi{
